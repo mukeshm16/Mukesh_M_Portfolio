@@ -73,6 +73,18 @@ body{
     color:black;
     font-weight:bold;
 }
+@media (max-width: 768px){
+
+    .btn-group{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+}
 .hero-image img{
     width:320px;
     height:320px;
@@ -263,5 +275,125 @@ footer{
 
         width:250px;
         height:250px;
+    }
+}
+/* =========================
+   TABLET DEVICES
+========================= */
+
+@media (max-width: 992px){
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+        padding-top: 120px;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-image img{
+        width: 280px;
+    }
+
+    .navbar{
+        padding: 15px 5%;
+    }
+
+    .project-container,
+    .skills-container,
+    .achievement-container,
+    .contact-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media (max-width: 768px){
+
+    section{
+        padding: 80px 7%;
+    }
+
+    .hero h1{
+        font-size: 2.2rem;
+    }
+
+    .hero h2{
+        font-size: 1.3rem;
+    }
+
+    .hero p{
+        font-size: 0.95rem;
+    }
+
+    .hero-image img{
+        width: 230px;
+    }
+
+    .project-container,
+    .skills-container,
+    .achievement-container,
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+
+    .btn-group{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        align-items:center;
+    }
+
+    .contact-card,
+    .project-card,
+    .skill-card,
+    .achievement-card{
+        width:100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE DEVICES
+========================= */
+
+@media (max-width: 480px){
+
+    .logo{
+        font-size:1.3rem;
+    }
+
+    .hero{
+        padding-top:100px;
+    }
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .hero h2{
+        font-size:1rem;
+    }
+
+    .hero-image img{
+        width:180px;
+    }
+
+    .title{
+        font-size:2rem;
+    }
+
+    .contact-card,
+    .project-card,
+    .skill-card,
+    .achievement-card{
+        padding:20px;
     }
 }
