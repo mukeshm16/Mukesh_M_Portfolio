@@ -118,6 +118,9 @@ section{
     padding:30px;
     border-radius:15px;
     line-height:1.8;
+    a{
+        text-align:justify;
+    }
 }
 
                                                     /* SKILLS */
